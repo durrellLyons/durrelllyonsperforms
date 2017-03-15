@@ -1,0 +1,288 @@
+@import "variables.less";
+@import "form.less";
+@import "mixins.less";
+@import "base_styles.less";
+
+/*** ----- Layout Rules ----- ***/
+.main-containers {
+    background-color: @backgroundWhite;
+}
+
+/*** Header ***/
+@media (min-width: 300px) {
+    header {
+        .main-containers;
+        margin-top: 0;
+        position: fixed;
+        top: 0;
+        min-height: 3em;
+        z-index: 10;
+    
+        .logo {
+            font-family: 'Cinzel', Arial;
+            font-size: 1.75em;
+            color: @textBlue;
+            line-height: 1em;
+            cursor: pointer;
+        }
+        
+        .tagline {
+            font-size: .65em;
+            float: left;
+            padding: 0 1em;
+            color: @textColor;
+        }
+        
+        .mobileMenuButton {
+            .img-border;
+            width: 2.5em;
+            position: absolute;
+            top: 0.2em;
+            right: 1em;
+        }
+        
+        nav {
+            background-color: @backgroundBlue;
+            margin-top: 1em;
+            position: absolute;
+            color: @textWhite;
+            font-family: 'Cinzel', Arial;
+            width: 100%;
+            text-align: center;
+            border-radius: 0px 0px 6px 6px;
+            display: none;
+        }
+        
+        nav ul li {
+            border-bottom: 1px solid @backgroundWhite;
+            padding: 0.15em 0;
+            cursor: pointer;
+        }
+        
+        nav ul li:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    header {
+        img {
+            display: none;
+        }
+        
+        .nav {
+            display: inline;
+            width: 45%;
+            right: 0em;
+            top: 0em;
+            background: none;
+            color: rgb(33,31,133);
+        }
+        
+        nav ul li {
+            display: inline;
+            border: none;
+            margin: 0 0.5em;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+}
+
+/*----- Branding Styles -----*/
+@media (min-width: 300px) {
+    .brandingDiv {
+        background: url("../images/Full_Body_Vest.png") no-repeat top center fixed;
+        background-position-y: 1.5em;
+        height: 100vh;
+        background-size: 100%;
+        position: relative;
+        margin: 1em auto;
+        overflow: hidden;
+        &:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        
+        .bgVideo {
+            display: none;
+        }
+        
+        .branding {
+            margin: 0 auto;
+            font-size: 3.2em;
+            position: absolute;
+            bottom: 1em;
+            width: 100%;
+            letter-spacing: 0.11em;
+            text-align: center;
+            color: @textWhite;
+            background-color: @backgroundBlue;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .brandingDiv {
+        position: relative;
+        
+        .branding {
+            margin: 0 auto;
+            text-align: center;
+            letter-spacing: 0.11em;
+            
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .brandingDiv {
+        background:none;
+        padding: 2em 0;
+        .bgVideo {
+            display: block;
+            position: fixed;
+            width: 100%;
+            z-index: -1;
+        }
+        
+        .branding {
+            width: 100%;
+            bottom: 1.5em;
+            letter-spacing: .1em;
+            font-size: 4em;
+            margin: 0 auto;
+        }
+    }
+}
+
+/*----- Main Content Styles -----*/
+@media (min-width: 300px){
+    main {
+        margin: 0 auto;
+        
+        .layout {
+            .layout-container;
+        }
+    }
+}
+
+/*** Bio Div Styles ***/
+@media (min-width: 300px) {
+    .bio {
+        .main-containers;
+        background: url("../images/bio_headshot.png") no-repeat top center fixed;
+        background-size: cover;
+        padding: 20em 0 2em;
+        
+        .layout {
+            .sub-containers;
+            background-color: @backgroundWhite;            
+            padding: 0.5em;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+}
+
+@media (min-width: 960px) {
+    .bio {
+        background: url("../images/Full_Body_Vest.png") no-repeat top center fixed;
+        background-size: cover;
+    }
+}
+
+/***  Contact Styles   ***/
+.contactDiv {
+    .main-containers;
+    padding: 0;
+}
+
+@media (min-width: 300px) {
+    .contactDiv {
+        
+        .contact {
+           width: 97%;
+           
+           article {
+                text-align: center;
+                textarea {
+                    height: 20.5em;
+                }
+           }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .contactDiv {
+        
+        .contact {
+            
+            article {
+                width: 45%;
+                float: left;
+                margin-right: 2em;
+                height: 30em;
+                padding: 2em 0;
+                
+                textarea {
+                    height: 22.5em;
+                }
+            }
+            
+            article + article{
+                margin-right: 0;                
+            }
+        }
+    }    
+}
+
+@media (min-width: 960px) {
+}
+/*----- Footer Styles -----*/
+@media (min-width: 300px) {
+    footer {
+        .main-containers;
+        margin-bottom: 0;
+        
+        section {
+            margin: 1em auto;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        
+        img {
+            width: 75%;
+            max-width: 400px;
+            text-align: center;
+            .img-border;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    footer {
+        section {
+            margin: 1em auto;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    footer {
+        position: relative;
+        section {
+            float: left;
+            width: 30%;
+        }
+        
+        img {
+            height: 5em;
+        }
+    }
+}

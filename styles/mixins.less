@@ -1,0 +1,37 @@
+.layout-container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-containers {
+    margin: 0 auto;
+    padding: 0.25em 0;
+    width: 100%;
+    &:after {
+        content:'';
+        display:table;
+        clear: both;
+    }
+}
+
+.sub-containers {
+    padding: 0.25em 0.25em 0.75em 0;
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -ms-border-radius: 35px;
+    border-radius: 35px;
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+.img-border {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;    
+}
