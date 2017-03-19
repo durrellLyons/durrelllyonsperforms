@@ -99,7 +99,7 @@
         height: 100vh;
         background-size: 100%;
         position: relative;
-        margin: 1em auto;
+        margin: 0 auto;
         overflow: hidden;
         &:after {
             content: '';
@@ -142,6 +142,8 @@
     .brandingDiv {
         background:none;
         padding: 2em 0;
+        margin: 2em auto;
+        
         .bgVideo {
             display: block;
             position: fixed;
@@ -170,12 +172,108 @@
     }
 }
 
+/*** Filmography Styles ***/
+@media (min-width: 300px) {
+    .film {
+        background-color: @textGrey;
+        .main-containers;
+        width: 80%;
+        padding: 10%;
+        
+        .film_div {
+            background-color: #000;
+            float: left;
+            width: 100%;
+            padding: 1em 0 2em;
+            margin: 1em 0;
+            text-align: center;
+            height: 25em;
+            position: relative;
+            .helper {
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+            }
+            img {
+                .img-border;
+                width: 85%;
+                max-width: 17em;
+                vertical-align: middle;
+            }
+            
+            .film_info_div {
+                position: absolute;
+                z-index: 100;
+                bottom: 0em;
+                padding: 0.5em;
+                text-align: center;
+                background: @backgroundWhite;
+                width: 85%;
+                margin: 0 auto;
+                left: 1em;
+                right: 1em;
+                border-radius: 10px 10px 0 0;
+                cursor: pointer;
+                
+                p {
+                    display: none;
+                    padding: 2em 0 5em;
+                }
+                
+                a {
+                    position: relative;
+                    top: 2em;
+                }
+            }
+        }
+        
+    }
+}
+
+@media (min-width: 700px) {
+    .film {
+        width: 90%;
+        padding: 5%;
+        .film_div {
+            padding: 1%;
+            margin: 1em;
+            width: 42%;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .film {
+        width: 95%;
+        padding: 5% 2.5%;
+        
+        .film_div {
+            width: 25%;
+            margin: 1.7em;
+        
+            .film_info_div {
+                border-radius: 10px;
+                cursor: pointer;
+                top: 1em;
+                right: 1em;
+                bottom: 1em;
+                left: 1em;
+                display: none;
+                p {
+                    display: block;
+                    padding: 2em 0;
+                }
+            }
+        }
+    }
+}
+
 /*** Bio Div Styles ***/
 @media (min-width: 300px) {
     .bio {
         .main-containers;
         background: url("../images/bio_headshot.png") no-repeat top center fixed;
-        background-size: cover;
+        background-size: 100%;
         padding: 20em 0 2em;
         
         .layout {
@@ -187,12 +285,17 @@
 }
 
 @media (min-width: 700px) {
+
 }
 
 @media (min-width: 960px) {
     .bio {
-        background: url("../images/Full_Body_Vest.png") no-repeat top center fixed;
+        background: url("../images/Full_Body_Vest.png") no-repeat top center fixed #fff;
         background-size: cover;
+        
+        .layout {
+            padding: 2em 0.5em;
+        }
     }
 }
 
@@ -251,7 +354,7 @@
         margin-bottom: 0;
         
         section {
-            margin: 1em auto;
+            margin: 2em auto;
             text-align: center;
             font-size: 1.5em;
         }
@@ -266,19 +369,20 @@
 }
 
 @media (min-width: 700px) {
-    footer {
-        section {
-            margin: 1em auto;
-        }
-    }
+
 }
 
 @media (min-width: 960px) {
     footer {
         position: relative;
+        padding: 3em 0 0;
         section {
             float: left;
             width: 30%;
+            p {
+                font-size: .85em;
+                margin: 1em auto;
+            }
         }
         
         img {

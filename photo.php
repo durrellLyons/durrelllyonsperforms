@@ -2,5 +2,7 @@
 <?php $photoController = new photoController($dbConnector); ?>
 
 <section class="main-containers">
-<?php $photoController->showAllPhotoCategories(); ?>
+    <article class="layout-containers">
+        <?php $photoController->showAllPhotoCategories(); ?>
+    </article>
 </section>

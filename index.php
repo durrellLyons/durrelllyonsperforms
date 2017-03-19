@@ -10,17 +10,21 @@
         <link rel='stylesheet' type='text/css' href='styles/styles.css' />
     </head>
     <body>
+        
         <?php include('header.php'); ?>
         
         <main role='main'>
             <?php include('branding.php'); ?>
+            <?php include('filmography.php'); ?>
             <?php include('bio.php'); ?>
+            <?php include('photo.php'); ?>
             <?php include('contact.php'); ?>
         </main>
         
         <?php include('footer.php'); ?>
         <script type="text/javascript" src="js/twitterfeed.js"></script>
         <script type='text/javascript' src='js/jquery-3.1.1.js'></script>
+        <script type='text/javascript' src='js/modernizr-custom.js'></script>
         <script type='text/javascript' src='js/jquery.scrollTo.min.js'></script>
         <script type='text/javascript'>
             $(document).ready(function(){
@@ -28,8 +32,16 @@
                 //mediaCheck();
                 mobileMenu();
                 navigation('#brand', 'brandingDiv');
+                
+                navigation('#navFilmography', 'film');
+                navigation('#mobileFilmography', 'film');
+                
                 navigation('#navBio', 'bio');
                 navigation('#mobileNavBio', 'bio');
+                
+                navigation('#navContact', 'contact');
+                navigation('#mobileNavContact', 'contact');
+                displayFilmInfo();
             });
             
             var backgroundImages = ['images/Full_Body_No_Jacket.png', 'images/Full_Body_Hubby_At_Park.png', 'images/Full_Body_Vest.png'];
@@ -78,6 +90,21 @@
                         $('.mobileNav').hide(500);
                     }
                 });
+            }
+            
+            function displayFilmInfo() {
+                var mq = window.matchMedia( "(max-width: 960px)" );
+                if(mq.matches) {
+                    $('.film_info_div h4').click(function() {
+                        $(this).next('p').toggle(500);
+                    });
+                } else {
+                    $('.film_div').hover(function() {
+                       $(this).find('.film_info_div').css('display', 'block');
+                    }, function() {
+                       $(this).find('.film_info_div').css('display', 'none');
+                    });
+                }
             }
             
             /*

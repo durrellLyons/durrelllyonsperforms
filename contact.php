@@ -1,4 +1,4 @@
-<section class="contactDiv" id="contactDiv">
+<section class="contactDiv" id="contact">
     <div class="contact layout-container">
         <article class="">
             <h4>CONTACT DURRELL LYONS: </h4>
