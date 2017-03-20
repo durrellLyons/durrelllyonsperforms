@@ -8,6 +8,35 @@
     background-color: @backgroundWhite;
 }
 
+@media (min-width: 300px) {
+    h3 {
+        &:before,
+        &after {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    h3 {
+        &:before,
+        &:after {
+            display: inline-block;
+            width: 18%;
+        }
+    }    
+}
+
+@media (min-width: 960px) {
+    h3 {
+        &:before,
+        &:after {
+            display: inline-block;
+            width: 25%;
+        }
+    }    
+}
+
 /*** Header ***/
 @media (min-width: 300px) {
     header {
@@ -73,7 +102,7 @@
         
         .nav {
             display: inline;
-            width: 45%;
+            width: 50%;
             right: 0em;
             top: 0em;
             background: none;
@@ -175,7 +204,6 @@
 /*** Filmography Styles ***/
 @media (min-width: 300px) {
     .film {
-        background-color: @textGrey;
         .main-containers;
         width: 80%;
         padding: 10%;
@@ -295,6 +323,114 @@
         
         .layout {
             padding: 2em 0.5em;
+        }
+    }
+}
+
+/*** Photo  Styles  ***/
+@media (min-width: 300px) {
+    .photo {
+        .main-containers;
+        padding: 5em 0;
+        .photo_category {
+            width: 90%;
+            padding: 1em 5%;
+            text-align: center;
+            position: relative;
+            float: left;
+            height: 10em;
+            overflow: hidden;
+            .helper {
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+            }
+            
+            img {
+                width: 100%;
+                max-width: 17em;
+                vertical-align: middle;                
+            }
+            
+            .photo_category_title {
+                margin: 0 auto;
+                font-size: 1.7em;
+                position: absolute;
+                bottom: 0em;
+                left: 0em;
+                right: 0em;
+                letter-spacing: 0.11em;
+                text-align: center;
+                color: @textWhite;
+                background-color: @backgroundBlue;
+            }
+        }
+        
+        .photos {
+            width: 90%;
+            padding: 5%;
+            float: left;
+            
+            img {
+                width: 100%;
+                .img-border;
+            }
+        }
+        
+        p {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .photo {
+        .photo_category {
+            width: 35%;
+            margin: 0 2%;
+            
+            img {
+                width: 100%;
+            }
+            
+            .photo_category_title {
+                bottom: 0;
+                font-size: 1.5em;
+            }
+        }
+        
+        .photos {
+            width: 40%;
+            padding: 5%;
+            float: left;
+            height: 18em;
+            overflow: hidden;
+        }
+        
+        p {
+            clear: both;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .photo {
+        .photo_category {
+            width: 12%;
+            margin: 0 .85em;
+            
+            img {
+                width: 100vh;
+                position: absolute;
+                left: 0;
+            }
+        }
+        
+        .photos {
+            height: 27em;
+            position: relative;
+            margin: 1em auto;
         }
     }
 }

@@ -6,6 +6,24 @@ h3, h4 {
 h3 {
     font-size: 3em;
     font-family: 'Cantarell', Arial;
+    color: @textBlue;
+    &:before,
+    &:after {
+        position: absolute;        
+        height: 3px;
+        content: '';
+        margin-top: .75em;
+        border: 3px inset @textBlue;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    }
+    &:before {
+        left: 1em;
+    }
+    &:after {
+        right: 1em;
+    }
 }
 
 h4 {

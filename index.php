@@ -11,8 +11,8 @@
     </head>
     <body>
         
-        <?php include('header.php'); ?>
-        
+        <!---  Visuals --->
+        <?php include('header.php'); ?>        
         <main role='main'>
             <?php include('branding.php'); ?>
             <?php include('filmography.php'); ?>
@@ -20,16 +20,15 @@
             <?php include('photo.php'); ?>
             <?php include('contact.php'); ?>
         </main>
-        
         <?php include('footer.php'); ?>
-        <script type="text/javascript" src="js/twitterfeed.js"></script>
+        <!---  End Visuals --->
+        
+        
         <script type='text/javascript' src='js/jquery-3.1.1.js'></script>
         <script type='text/javascript' src='js/modernizr-custom.js'></script>
         <script type='text/javascript' src='js/jquery.scrollTo.min.js'></script>
         <script type='text/javascript'>
             $(document).ready(function(){
-                setInterval(backgroundChange, 5000);
-                //mediaCheck();
                 mobileMenu();
                 navigation('#brand', 'brandingDiv');
                 
@@ -39,9 +38,18 @@
                 navigation('#navBio', 'bio');
                 navigation('#mobileNavBio', 'bio');
                 
+                navigation('#navPhotos', 'photo');
+                navigation('#mobileNavPhotos', 'photo');
+                
                 navigation('#navContact', 'contact');
                 navigation('#mobileNavContact', 'contact');
+                
+                setInterval(backgroundChange, 5000);
+                //mediaCheck();
                 displayFilmInfo();
+                dataDisplay('filmHome.php', '#filmDiv');
+                dataDisplay('photoHome.php', '#photoDiv');
+                
             });
             
             var backgroundImages = ['images/Full_Body_No_Jacket.png', 'images/Full_Body_Hubby_At_Park.png', 'images/Full_Body_Vest.png'];
@@ -95,7 +103,7 @@
             function displayFilmInfo() {
                 var mq = window.matchMedia( "(max-width: 960px)" );
                 if(mq.matches) {
-                    $('.film_info_div h4').click(function() {
+                    $(document).on('click', '.film_info_div h4',  function() {
                         $(this).next('p').toggle(500);
                     });
                 } else {
@@ -105,6 +113,23 @@
                        $(this).find('.film_info_div').css('display', 'none');
                     });
                 }
+            }
+            
+            function dataDisplay(url, div_id) {
+                $.get(url, function(data){
+                    $(div_id).html(data);
+                });
+            }
+            
+            function getMediaList(id, media){
+                if(media == 'photo') {
+                    dataDisplay('photoList.php?cat_id='+id, '#photoDiv');
+                }
+                
+                if (media == 'video' ) {
+                    alert('nawl');
+                }
+                
             }
             
             /*

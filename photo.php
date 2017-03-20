@@ -1,8 +1,4 @@
-<?php include('controller/photoController.php'); ?>
-<?php $photoController = new photoController($dbConnector); ?>
-
-<section class="main-containers">
-    <article class="layout-containers">
-        <?php $photoController->showAllPhotoCategories(); ?>
-    </article>
+<section class='main-containers photo' id='photo'>
+    <h3>Photo Gallery</h3>
+    <article class='layout-container' id='photoDiv' role='article'></article>
 </section>

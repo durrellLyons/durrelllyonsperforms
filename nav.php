@@ -2,7 +2,7 @@
     <ul>
         <li id="mobileFilmography">tv/film</li>
         <li id="mobileNavBio">bio</li>
-        <li id="mobileNavPhoto">photos</li>
+        <li id="mobileNavPhotos">photos</li>
         <li id="mobileNavContact">contact</li>
     </ul>
 </nav>

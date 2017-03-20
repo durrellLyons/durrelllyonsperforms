@@ -1,15 +1,16 @@
 <?php
 
-include('model/filmModel.php');
-include('view/filmView.php');
+require('class/dbConnect.php');
+require('model/filmModel.php');
+require('view/filmView.php');
 
 class filmController {
     
-    private $mysqli;
     private $filmModel;
     private $filmView;
     
-    public function __construct($dbConnector) {
+    public function __construct() {
+        $dbConnector = new dbConnector();
         $this->filmModel = new filmModel($dbConnector);
         $this->filmView = new filmView();
     }

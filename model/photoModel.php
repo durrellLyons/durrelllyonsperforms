@@ -29,32 +29,30 @@ class photoModel{
         return $arrayPhotoCat;
     }
     
-/*    
     public function getAllPhotosByCatId($cat_id){
-        $activeValidPhoto = array();
-        //$this->better_print_r($this->getAllPhotos());
-        foreach($this->getAllPhotos() as $photo){
-            if($photo['active'] == true && $photo['photo_cat'] == $cat_id){
-                //$this->better_print_r($photo);
-                array_push($activeValidPhoto, $photo);
-            }
+        $arrayPhotoData = array();
+        $arrayPhoto = array();
+        
+        $result = mysqli_query($this->mysqli, "SELECT * FROM photogallery WHERE photo_cat =$cat_id
+                                               and active = 1
+                                               ORDER BY photo_id DESC");
+        while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+            $photo_id = $row['photo_id'];
+            $photo_cat = $row['photo_cat'];
+            $photo_name = $row['photo_name'];
+            $active = $row['active'];
+            $image = $row['image'];
+            
+            $arrayPhotoData['photo_id'] = $photo_id;
+            $arrayPhotoData['photo_cat'] = $photo_cat;
+            $arrayPhotoData['photo_name'] = $photo_name;
+            $arrayPhotoData['active'] = $active;
+            $arrayPhotoData['image'] = $image;
+            
+            array_push($arrayPhoto, $arrayPhotoData);
         }
-        //$this->better_print_r($activeValidPhoto);
-        return $activeValidPhoto;
-    }
-    
-    public function getAllFeaturePhotos(){
-        $activeValidPhoto = array();
-        foreach($this->getAllPhotos() as $photo){
-            if($photo['active'] == true && $photo['feature'] == true){
-                //$this->better_print_r($photo);
-                array_push($activeValidPhoto, $photo);
-            }
-        }
-        //$this->better_print_r($activeValidPhoto);
-        return $activeValidPhoto;
-    }
-*/    
+        return $arrayPhoto;
+    }  
 }
 
 ?>

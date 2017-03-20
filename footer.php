@@ -1,10 +1,10 @@
-<footer role="footer">
-    <aside role="complementary" class="layout-container">
-        <section class="agent p-org">
-            <img src="images/azuree-talent-logo.png"
-                 title="Durrell Lyons Talent Agent"
-                 href="http://www.azureetalent.com"
-                 target="_blank" />
+<footer role='footer'>
+    <aside role='complementary' class='layout-container'>
+        <section class='agent p-org'>
+            <img src='images/azuree-talent-logo.png'
+                 title='Durrell Lyons Talent Agent'
+                 href='http://www.azureetalent.com'
+                 target='_blank' />
             <p>
                 Azuree Talent Agency <br>
                 201 17th st suite 300 <br>
@@ -12,11 +12,11 @@
             </p>
         </section>
         
-        <section class="manager p-org">
-            <img src="images/five-star-management-banner.jpg"
-                 title="Durrell Lyons Talent Manager"
-                 href="http://www.fivestartalent.biz"
-                 target="_blank" />
+        <section class='manager p-org'>
+            <img src='images/five-star-management-banner.jpg'
+                 title='Durrell Lyons Talent Manager'
+                 href='http://www.fivestartalent.biz'
+                 target='_blank' />
             <p>
                 Five Star Management <br>
                 3544 White Sands Way <br>
@@ -24,10 +24,11 @@
             </p>
         </section>
         
-        <section class="social_media">
+        <section class='social_media'>
+            <div class='social_media_div'></div>
             <div>
-                <label for="Email List">Join My Email List</label>
-                <input id="Email List" type="email" name="email" />
+                <label for='Email List'>Join My Email List</label>
+                <input id='Email List' type='email' name='email' />
             </div>
         </section>
     </aside>
