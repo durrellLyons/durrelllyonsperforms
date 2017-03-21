@@ -16,6 +16,7 @@
         <main role='main'>
             <?php include('branding.php'); ?>
             <?php include('filmography.php'); ?>
+            <?php include('video.php'); ?>
             <?php include('bio.php'); ?>
             <?php include('photo.php'); ?>
             <?php include('contact.php'); ?>
@@ -49,6 +50,7 @@
                 displayFilmInfo();
                 dataDisplay('filmHome.php', '#filmDiv');
                 dataDisplay('photoHome.php', '#photoDiv');
+                dataDisplay('videoHome.php', '#videoDiv');
                 
             });
             

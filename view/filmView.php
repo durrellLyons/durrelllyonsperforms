@@ -2,8 +2,9 @@
 
 class filmView {
     
-    public function showAllFilms($filmArray) {
-        foreach($filmArray as $film) {
+    public function showAllFilms($filmListArray) {
+        $filmArray = array();
+        foreach($filmListArray as $film) {
             $content = '';
             $content .= '<div class="film_div">';
             $content .= '<span class="helper"></span>';
@@ -13,8 +14,9 @@ class filmView {
             $content .= '<p>' . $film['f_description'] . '<br> <a target="_blank" href="' . $film['f_imdbLink'] . '">More Info</a> </p>';
             $content .= '</div>';
             $content .= '</div>';
-            echo $content;
+            array_push($filmArray, $content);
         }
+        return $filmArray;
     }
     
     private function better_print_r($input){

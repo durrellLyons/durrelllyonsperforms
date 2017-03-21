@@ -18,6 +18,7 @@ class filmController {
     public function showAllFilms() {
         $filmArray = $this->filmModel->getAllFilms();
         $filmList = $this->filmView->showAllFilms($filmArray);
+        return implode(' ', $filmList);
     }
     
 }
