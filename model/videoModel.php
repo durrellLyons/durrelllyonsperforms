@@ -20,8 +20,9 @@ class videoModel {
         $arrayVideos = array();
         
         $result = mysqli_query($this->mysqli, 'Select video_name, video_path FROM videogallery
-                                               WHERE video_cat = ' . $video_cat_id .
-                                               ' AND active = 1')or die(mysqli_error());
+                                               WHERE video_cat = ' . $video_cat_id . '
+                                               AND active = 1
+                                               ORDER BY video_id DESC')or die(mysqli_error());
         while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
             $video_name = $row['video_name'];
             $video_path = $row['video_path'];

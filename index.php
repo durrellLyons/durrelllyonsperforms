@@ -34,7 +34,10 @@
                 navigation('#brand', 'brandingDiv');
                 
                 navigation('#navFilmography', 'film');
-                navigation('#mobileFilmography', 'film');
+                navigation('#mobileNavFilmography', 'film');
+                
+                navigation('#navVideo', 'video')
+                navigation('#mobileNavVideo', 'video');
                 
                 navigation('#navBio', 'bio');
                 navigation('#mobileNavBio', 'bio');
@@ -126,12 +129,13 @@
             function getMediaList(id, media){
                 if(media == 'photo') {
                     dataDisplay('photoList.php?cat_id='+id, '#photoDiv');
-                }
-                
-                if (media == 'video' ) {
-                    alert('nawl');
-                }
-                
+                }                
+            }
+            
+            function socialMediaLInks(link, url) {
+                    $(this).target = "_blank";
+                    window.open(url);
+                    return false;
             }
             
             /*

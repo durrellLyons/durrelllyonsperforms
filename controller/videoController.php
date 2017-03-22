@@ -22,10 +22,10 @@
             $videoDataArray['videoCat'] = $videoCat;
             
             $videoList = $this->videoModel->getVideoListByCatId($videoCatId);
-            $videoDataArray['videoList'] = array();
-            array_push($videoDataArray['videoList'], $videoList);
+            $videoDataArray['videoList'] = $videoList;
             
             $videoDisplay = $this->videoView->showVideoListAndCat($videoDataArray);
+            return $videoDisplay;
         }
     }
     

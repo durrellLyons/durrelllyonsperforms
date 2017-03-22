@@ -296,6 +296,81 @@
     }
 }
 
+/*** Video Div Styles ***/
+@media (min-width: 300px) {
+    .video {
+        .main-containers;
+        background: @textWhite;
+        padding: 2em 0 5em;
+        
+        h3 {
+            padding: 2em 0 1em;
+        }
+        
+        .videoList {
+            
+            .video_list_div{
+                
+                padding: 1em 0 3em;
+                &:after {
+                    content: '';
+                    display: table;
+                    clear: both;
+                }
+                
+                h4 {
+                    padding-bottom: 1em;
+                    text-decoration: underline;
+                }
+                
+                iframe {
+                    border: 2px solid @backgroundWhite;
+                    width: 100%;
+                    margin: 1% 0;
+                    height: 20em;
+                    border-radius: 10px;
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .video {
+        
+        .videoList {
+            
+            .video_list_div {
+            
+                iframe {
+                    
+                    width: 45%;
+                    margin: 2%;
+                    height: 15em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .video {
+        
+        .videoList {
+            
+            .video_list_div {
+                
+                iframe {
+                        border: 2px solid white;
+                        width: 30.5%;
+                        margin: 1%;
+                }
+            }
+        }
+    }
+}
+
 /*** Bio Div Styles ***/
 @media (min-width: 300px) {
     .bio {
@@ -305,7 +380,6 @@
         padding: 20em 0 2em;
         
         .layout {
-            .sub-containers;
             background-color: @backgroundWhite;            
             padding: 0.5em;
         }
@@ -313,7 +387,13 @@
 }
 
 @media (min-width: 700px) {
-
+    .bio {
+        
+        .layout {
+            .sub-containers;
+            padding: 2em 1em;
+        }
+    }
 }
 
 @media (min-width: 960px) {
@@ -443,6 +523,8 @@
 
 @media (min-width: 300px) {
     .contactDiv {
+        .main-containers;
+        padding: 7em 0;
         
         .contact {
            width: 97%;
@@ -488,11 +570,49 @@
     footer {
         .main-containers;
         margin-bottom: 0;
+        background-color: @backgroundBlue;
+        color: @textWhite;
         
         section {
             margin: 2em auto;
             text-align: center;
             font-size: 1.5em;
+            
+            .social_media_div {
+                
+                width: 100%;
+                height: 4.1em;
+                margin-bottom: 2em;
+                
+                &:after {
+                    content: '';
+                    display: table;
+                    clear: both;
+                }
+                
+                .facebook,
+                .twitter,
+                .instagram {
+                    display: inline-block;
+                    background-image: url('../images/social-media-icons.jpg');
+                    background-repeat: no-repeat;
+                    height: 100%;
+                    width: 3.8em;
+                    cursor: pointer;
+                }
+                
+                .facebook {
+                    background-position: -5px -101px;
+                }
+                
+                .twitter {
+                    background-position: -105px -101px;
+                }
+                
+                .instagram {
+                    background-position: -305px -101px;
+                }
+            }
         }
         
         img {
@@ -505,7 +625,25 @@
 }
 
 @media (min-width: 700px) {
-
+    footer {
+        
+        section {
+            
+            .social_media_div {
+                
+                .facebook,
+                .twitter,
+                .instagram {
+                    margin: 0 0.25em;
+                    &:after {
+                        content: '';
+                        display: table;
+                        clear: both;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 960px) {
@@ -518,6 +656,20 @@
             p {
                 font-size: .85em;
                 margin: 1em auto;
+            }
+            
+            .social_media_div {
+                
+                .facebook,
+                .twitter,
+                .instagram {
+                    margin: 0;
+                    &:after {
+                        content: '';
+                        display: table;
+                        clear: both;
+                    }
+                }
             }
         }
         

@@ -25,7 +25,11 @@
         </section>
         
         <section class='social_media'>
-            <div class='social_media_div'></div>
+            <div class='social_media_div'>
+                <div class='facebook' onclick='return socialMediaLInks("facebook", "http://facebook.com/durrelllyonsperforms");'></div>
+                <div class='twitter' onclick='return socialMediaLInks("twitter", "http://twitter.com/durrelllyons");'></div>
+                <div class='instagram' onclick='return socialMediaLInks("instagram", "http://instagram.com/durrelllyonsperforms");'></div>
+            </div>
             <div>
                 <label for='Email List'>Join My Email List</label>
                 <input id='Email List' type='email' name='email' />

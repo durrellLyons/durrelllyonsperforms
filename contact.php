@@ -1,7 +1,8 @@
 <section class="contactDiv" id="contact">
     <div class="contact layout-container">
+        <h3>Contact: </h3>
         <article class="">
-            <h4>CONTACT DURRELL LYONS: </h4>
+            <h4>Email Durrell Lyons</h4>
             <form>
                 <input type="email" name="email" placeholder="Email" />
                 <input type="text" name="subject" placeholder="Subject" />
