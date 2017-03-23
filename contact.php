@@ -3,10 +3,12 @@
         <h3>Contact: </h3>
         <article class="">
             <h4>Email Durrell Lyons</h4>
-            <form>
-                <input type="email" name="email" placeholder="Email" />
-                <input type="text" name="subject" placeholder="Subject" />
-                <textarea name="message" placeholder="message"></textarea>
+            <form name="" method="get" action="sendMail.php">
+                <input type="text" name="name"  placeholder="Name" /> <br>
+                <input type="email" name="email"  placeholder="Email" /> <br>
+                <input type="text" name="subject"  placeholder="Subject" /> <br>
+                <textarea name="message" placeholder="Message"></textarea>
+                <input type="submit" value="Send"  />
             </form>
         </article>
         <article class="">

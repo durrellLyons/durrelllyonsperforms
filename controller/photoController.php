@@ -1,8 +1,8 @@
 <?php
 
-require('class/dbConnect.php');
-require('model/photoModel.php');
-require('view/photoView.php');
+require('../class/dbConnect.php');
+require('../model/photoModel.php');
+require('../view/photoView.php');
 
 class photoController {
     

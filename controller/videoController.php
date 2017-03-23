@@ -1,8 +1,8 @@
 <?php
     
-    require('class/dbConnect.php');
-    require('model/videoModel.php');
-    require('view/videoView.php');
+    require('../class/dbConnect.php');
+    require('../model/videoModel.php');
+    require('../view/videoView.php');
     
     class videoController {
         
