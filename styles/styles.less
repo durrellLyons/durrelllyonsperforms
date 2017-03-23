@@ -37,6 +37,24 @@
     }    
 }
 
+a:link {
+    color: @textBlue;
+}
+
+a:hover {
+    color: @textWhite;
+}
+
+a:visited {
+    color: @textBlue;
+}
+
+a:target {
+    color: @textBlue;
+}
+
+
+
 /*** Header ***/
 @media (min-width: 300px) {
     header {
@@ -314,6 +332,7 @@
             position: relative;
             height: 10em;
             overflow: hidden;
+            cursor: pointer;
             
             img {
                 width: 100%;
@@ -483,6 +502,7 @@
             float: left;
             height: 10em;
             overflow: hidden;
+            cursor: pointer;
             .helper {
                 display: inline-block;
                 height: 100%;
@@ -597,6 +617,17 @@
                 text-align: center;
                 textarea {
                     height: 20.5em;
+                    padding: 5px;
+                }
+                
+                input {
+                    padding: 5px;
+                }
+                
+                input[type='submit'] {
+                    background-color: @textBlue;
+                    font-size: 1.5em;
+                    color: @textWhite;
                 }
            }
         }
