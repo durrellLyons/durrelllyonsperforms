@@ -2,6 +2,6 @@
 
     require('controller/videoController.php');
     $videoController = new videoController();
-    echo $videoController->showVideoListAndCatByCatId(2);
-    echo $videoController->showVideoListAndCatByCatId(4);
+    echo $videoController->showVideoCatByCatIdController(2);
+    echo $videoController->showVideoCatByCatIdController(4);
 ?>

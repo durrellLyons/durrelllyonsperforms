@@ -8,5 +8,5 @@
 ?>
 
 <p>
-    <a href='#photoDiv' onclick='dataDisplay("photoHome.php", "#photoDiv");'>Home</a>
+    <a href='#photoDiv' onclick='dataDisplay("photoHome.php", "#photoDiv");'>Photo Home</a>
 </p>

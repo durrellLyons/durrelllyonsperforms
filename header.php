@@ -1,7 +1,3 @@
-<?php
-    require("/class/dbConnect.php");
-    $dbConnector = new dbConnector();
-?>
 <header role="banner">
     <section class="layout-container">
         <h2 class="logo p-name" id="brand">Durrell Lyons</h2>

@@ -129,7 +129,11 @@
             function getMediaList(id, media){
                 if(media == 'photo') {
                     dataDisplay('photoList.php?cat_id='+id, '#photoDiv');
-                }                
+                }
+                
+                if(media == 'video') {
+                    dataDisplay('videoList.php?cat_id='+id, '#videoDiv');
+                }
             }
             
             function socialMediaLInks(link, url) {

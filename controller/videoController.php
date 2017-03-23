@@ -15,6 +15,12 @@
             $this->videoView = new videoView();
         }
         
+        public function showVideoCatByCatIdController($videoCatId) {
+            $videoCatData = $this->videoModel->getVideoCatByCatId($videoCatId);
+            $videoCat = $this->videoView->showVideoCatByCatId($videoCatData);
+            return $videoCat;
+        }
+        
         public function showVideoListAndCatByCatId($videoCatId) {
             $videoDataArray = array();
             

@@ -10,11 +10,12 @@
             </form>
         </article>
         <article class="">
-            <a class="twitter-timeline"
-               href="https://twitter.com/DurrellLyons"
-               data-widget-id="266642534917349376">Tweets by @DurrellLyons</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
+            <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script>
+            <iframe src="//lightwidget.com/widgets/603de25fc89958a19baba9c0a305fad6.html"
+                    scrolling="no"
+                    allowtransparency="true"
+                    class="lightwidget-widget"
+                    style="width: 100%; border: 0; overflow: hidden;"></iframe>
         </article>
     </div><!-- .contact -->
 </section>

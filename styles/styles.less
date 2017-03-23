@@ -102,7 +102,7 @@
         
         .nav {
             display: inline;
-            width: 50%;
+            width: 55%;
             right: 0em;
             top: 0em;
             background: none;
@@ -307,6 +307,32 @@
             padding: 2em 0 1em;
         }
         
+        .video_cat_div {
+            width: 95%;
+            padding: 5% 2.5%;
+            float: left;
+            position: relative;
+            height: 10em;
+            overflow: hidden;
+            
+            img {
+                width: 100%;
+            }
+            
+            .video_cat_title {
+                margin: 0 auto;
+                font-size: 1.7em;
+                position: absolute;
+                bottom: 0em;
+                left: 0em;
+                right: 0em;
+                letter-spacing: 0.11em;
+                text-align: center;
+                color: @textWhite;
+                background-color: @backgroundBlue;
+            }
+        }
+        
         .videoList {
             
             .video_list_div{
@@ -331,6 +357,28 @@
                     border-radius: 10px;
                     float: left;
                 }
+                
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+        }
+        
+        p {
+            margin: 1em auto;
+            text-align: center;
+            font-size: 3.2em;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .video {
+        .video_cat_div {
+            height: 18em;
+            
+            .video_cat_title {
+                font-size: 2.7em;
             }
         }
     }
@@ -338,6 +386,17 @@
 
 @media (min-width: 700px) {
     .video {
+        
+        .video_cat_div {
+            width: 44%;
+            padding: 0 1.5%;
+            margin: 0 1.5%;
+            height: 11em;
+            
+            .video_cat_title {
+                font-size: 1.7em;
+            }
+        }
         
         .videoList {
             
@@ -356,6 +415,10 @@
 
 @media (min-width: 960px) {
     .video {
+        
+        .video_cat_div {
+            height: 15em;    
+        }
         
         .videoList {
             
@@ -458,8 +521,9 @@
         }
         
         p {
-            width: 100%;
+            margin: 1em auto;
             text-align: center;
+            font-size: 3.2em;
         }
     }
 }
@@ -570,7 +634,7 @@
     footer {
         .main-containers;
         margin-bottom: 0;
-        background-color: @backgroundBlue;
+        background-color: @textBlue;
         color: @textWhite;
         
         section {
@@ -677,4 +741,23 @@
             height: 5em;
         }
     }
+}
+
+
+.promptNotify{
+    position: fixed;
+    border: 2px groove #c0c0c0;
+    text-align: center;
+    width: 30em;
+    top: 2.5em;
+    left: 33%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    z-index: 200;
+    color: blue;
+    padding: 2em 0;
+}
+
+.promptNotify strong {
+  font-size: 3em;
 }
