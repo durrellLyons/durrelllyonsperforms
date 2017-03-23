@@ -32,7 +32,7 @@ $email_content = "
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $headers .= "From: " . $email_address . "\r\n";
-    $mail_confirmation = mail("durrell.lyons@gmail.com",$subject,$email_content,$headers);
+    $mail_confirmation = mail("durrell@durrelllyonsperforms.com",$subject,$email_content,$headers);
     
     if($mail_confirmation){
       //echo "Yup";
