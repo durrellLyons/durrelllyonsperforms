@@ -31,8 +31,10 @@
                 <div class='instagram' onclick='return socialMediaLInks("instagram", "http://instagram.com/durrelllyonsperforms");'></div>
             </div>
             <div>
-                <label for='Email List'>Join My Email List</label>
-                <input id='Email List' type='email' name='email' />
+                <p>              
+                    &copy; 2015 Durrell Lyons Inc. <br>
+                    All Rights Reserved <br>              
+                </p>
             </div>
         </section>
     </aside>

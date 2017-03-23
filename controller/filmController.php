@@ -1,8 +1,8 @@
 <?php
 
-require('class/dbConnect.php');
-require('model/filmModel.php');
-require('view/filmView.php');
+require('../class/dbConnect.php');
+require('../model/filmModel.php');
+require('../view/filmView.php');
 
 class filmController {
     

@@ -9,3 +9,4 @@
         <?php include("nav.php"); ?>
     </section><!-- .layout-container -->
 </header><!-- .banner -->
+<?php include("notifyMessage.php"); ?>
