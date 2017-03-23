@@ -776,12 +776,8 @@ a:target {
 
 
 .promptNotify{
-    position: fixed;
     border: 2px groove #c0c0c0;
     text-align: center;
-    width: 30em;
-    top: 2.5em;
-    left: 33%;
     background-color: #ffffff;
     border-radius: 15px;
     z-index: 200;
@@ -791,4 +787,23 @@ a:target {
 
 .promptNotify strong {
   font-size: 3em;
+}
+
+@media(min-width: 300px) {
+    .promptNotify {
+        position: fixed;
+        width: 98%;
+        left: 0;
+        right: 0;
+        top: 2.5em;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 700px) {
+    .promptNotify {
+        width: 30em;
+        top: 2.5em;
+        left: 33%;
+    }
 }
