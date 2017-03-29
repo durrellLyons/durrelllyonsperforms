@@ -5,6 +5,7 @@
         <meta id="view" name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1">
         <link rel='stylesheet' type='text/css' href='styles/normalize.css' />
         <link rel='stylesheet' type='text/css' href='styles/styles.css' />
+        <link rel="icon" type="image/png" href="http://durrelllyonsperforms.com/images/Brick_Wall_HeadShot.png">
         <?php include('inc/meta.php'); ?>
     </head>
     <body>
