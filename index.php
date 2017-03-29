@@ -4,9 +4,6 @@
         <title>Durrell Lyons The Artist</title>
         <meta id="view" name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1">
         <link rel='stylesheet' type='text/css' href='styles/normalize.css' />
-        <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Cantarell'>
-        <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Actor'>
-        <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Cinzel'>
         <link rel='stylesheet' type='text/css' href='styles/styles.css' />
         <?php include('inc/meta.php'); ?>
     </head>
