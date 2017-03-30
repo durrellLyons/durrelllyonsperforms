@@ -1,10 +1,12 @@
 <footer role='footer'>
     <aside role='complementary' class='layout-container'>
         <section class='agent p-org'>
-            <img src='images/azuree-talent-logo.png'
+	    <a href="http://azureetalent.com" target="_blank">
+		<img src='images/azuree-talent-logo.png'
                  title='Durrell Lyons Talent Agent'
                  href='http://www.azureetalent.com'
-                 target='_blank' />
+		 target='_blank' />
+	    </a>
             <p>
                 Azuree Talent Agency <br>
                 201 17th st suite 300 <br>
@@ -13,10 +15,12 @@
         </section>
         
         <section class='manager p-org'>
-            <img src='images/five-star-management-banner.jpg'
+	    <a href="http://fivestartalent.biz" target="_blank">
+		<img src='images/five-star-management-banner.jpg'
                  title='Durrell Lyons Talent Manager'
                  href='http://www.fivestartalent.biz'
-                 target='_blank' />
+		 target='_blank' />
+	    </a>
             <p>
                 Five Star Management <br>
                 3544 White Sands Way <br>
